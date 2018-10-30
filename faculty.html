@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Faculty</title>
+	<style type="text/css">
+		*
+		{
+			margin: 0;
+			padding: 0;
+			font-family: sans-serif;
+		}
+		body
+		{
+			background: url(building.jpg);
+		}
+		.team-section
+		{
+			overflow: hidden;
+			text-align: center;
+			background: #000;
+			padding: 60px;	
+		}
+		.team-section h1
+		{
+			text-transform: uppercase;
+			margin-bottom: 60px;
+			color: white;
+			font-size: 40px;
+		}
+		.border
+		{
+			display: block;
+			margin: auto;
+			width: 160px;
+			height: 3px;
+			background: rgb(191,30,45);
+			margin-bottom: 40px;
+		}
+		.ps
+		{
+			margin-bottom: 40px;
+
+		}
+		.ps a
+		{
+			display: inline-block;
+			margin: 0 30px;
+			width: 160px;
+			height: 160px;
+			overflow: hidden;
+			border-radius: 50%;
+		}
+		.ps a img
+		{
+			width: 130%;
+			filter: grayscale(100%);
+			transition: 0.4s all;
+
+		}
+		.ps a:hover > img
+		{
+			filter: none;
+		}
+		.section
+		{
+			width: 600px;
+			margin: auto;
+			font-size: 20px;
+			color: white;
+			text-align: justify;
+			height: 0;
+			overflow: hidden;
+		}
+		.section:target
+		{
+			height: auto;
+		}
+		.name
+		{
+			display: block;
+			margin-bottom: 30px;
+			text-align: center;
+			text-transform: uppercase;
+			font-size: 22px;
+		}
+		.header
+			{
+				width: 960px;
+				padding: 20px;
+				background-color: #000;
+				
+			}
+			.nav>ul
+			{
+
+				position: absolute;
+				right: 150px;
+			}
+			.nav>ul>li
+			{
+				margin-top: 10px;
+				list-style: none;
+				float: left;
+				height: 40px;
+				line-height: 40px;
+			}
+			.nav>ul>li>a
+			{
+				text-decoration: none;
+				font-family: 'Abel', sans-serif;
+				color: #fff;
+				font-size: 14px;
+				font-weight: bold;
+				padding: 0 20px 0 20px;
+			}
+			.btn
+			{
+				margin-right: 10px;
+				margin-top: 10px;
+				width: 130px;
+				height: 40px;
+				background: rgb(191,30,45);
+				font-size: 16px;
+				font-weight: bold;
+				font-family: 'Abel', sans-serif;
+				border: none;
+				border-radius: 5px;
+				color: #fff;
+				position: absolute;
+				right: 0;
+
+			}	
+	</style>
+</head>
+<body>
+	<div class="nav">
+
+				<ul>
+					<li><a href="home.php">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					
+					<li><a href="faculty.html">Faculty</a></li>
+				</ul>
+	
+			<button class="btn" onclick="location.href='contact.html'">Contact   Us</button>
+		</div>
+	<div class="team-section">
+		<h1>Faculty Team</h1>
+		<span class="border"></span>
+	<div class="ps">
+		<a href="#pic1"><img src="pic1.png" alt=""></a>
+		<a href="#pic2"><img src="pic2.png" alt=""></a>
+		<a href="#pic3"><img src="pic3.png" alt=""></a>
+		
+	</div>	
+
+	<div class="section" id="pic1">
+		<span class="name">Bridget	Brock</span>
+		<span class="border"></span>
+		<p>
+			"The pen is mightier than the sword."
+Trying to convince people with ideas and words is more effective than trying to force people to do what you want.
+		</p>
+		</div>
+
+		<div class="section" id="pic2">
+		<span class="name">Emily  Brooks</span>
+		<span class="border"></span>
+		<p>
+			Too many cooks spoil the broth."
+When there are too many people trying to lead and give their opinions, it's confusing and leads to bad results. Jobs and projects should have one or two strong leaders.
+		</p>
+		</div>
+
+			<div class="section" id="pic3">
+		<span class="name">Nicole  Adams</span>
+		<span class="border"></span>
+		<p>
+			"You can't make an omelet without breaking a few eggs."
+When you try to do something great, you'll probably make a few people annoyed or angry. Don't worry about those people; just focus on the good results.
+		</p>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login Form Design</title>
+<style>
+   body
+{
+    background:
+    height: 400px;
+    width: 100%;
+    background-position: center;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(univer.jpg);
+    height: 100vh;
+    background-position: center;
+
+
+  }
+
+.loginbox{
+    width: 320px;
+    height: 610px;
+    background: #000;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.loginbox p{
+	margin:0px;
+    font-weight: bold;
+}
+
+.loginbox input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.text
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+.submit
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #fb2525;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.submit:hover
+{
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+}
+</style>
+</head>
+<body>
+    <div class="loginbox">
+        <h1>Enter Details</h1>
+        <form method="post" action="success.html">
+            <p>Name</p>
+            <input type="text" class="text" name="uname" placeholder="Enter name">
+            <p>Age</p>
+            <input type="text" class="text" name="age" placeholder="Enter Age">
+            <p>Email</p>
+            <input type="text" class="text" name="email" placeholder="Enter Email">
+            <p>Address</p>
+            <input type="text" class="text" name="address" placeholder="Enter Address">
+            <input type="reset" class="submit" name="">
+            <input type="submit" class="submit" name="" value="Submit">
+            <input type="button" class="submit" onclick="location.href='adminhome.php'" name="" value="Back">
+        </form>
+        
+    </div>
+
+</body>
+</head>
+</html>
